@@ -74,8 +74,29 @@ Homeworks:
 3. Given a number, check whether it is a palindrome number or not.
 4. Given a number, check whether it is an Armstrong number or not.
 5. Given two numbers, check whether they are amicable numbers or not.
-6. given a number, convert the number into its binary without using library function.
+6. Given a number, convert the number into its binary without using library function.
 7. Given two numbers, find the GCD of the numbers.
 8. Given two numbers, find the LCM of the numbers.
 9. Given a number N, find the sum of first N natural numbers.
 10. Given a number, check whether the number is a Fibonacci or not.
+
+Problem: Given two numbers, find the GCD of the numbers.
+
+Problems based around duplicates and frequency of elements in an array.
+
+Homeworks:
+
+- Given an array of integers, find the frequency of each element in the array.
+- Given an array of integers, find the number of duplicates in the array.
+- Given an array of integers, find the number of unique elements in the array.
+- Given an array of integers, remove the duplicates from the array.
+- Given an array of integers, find the first non-repeating element in the array.
+- Given an array of integers, find the first repeating element in the array.
+- Given an array of integers, find the maximum frequency of an element in the array.
+- Given an array of integers, find the minimum frequency of an element in the array.
+- Given a string, find the frequency of each character in the string and print as like 'a2b3c4d5'.
+- Given a string, find the first non-repeating character in the string.
+- Given a string, find the first repeating character in the string.
+- Given two arrays, find the common elements between the arrays.
+
+Technique: Hashing
