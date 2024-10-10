@@ -139,29 +139,49 @@
 // Problem: Given an array of integers, find the first non - repeating element in the array.
 // output: 7
 
-let numbers = [2, 3, 4, 5, 2, 3, 5, 7, 6, 5, 4, 3];
+// let numbers = [2, 3, 4, 5, 2, 3, 5, 7, 6, 5, 4, 3];
 
-let frequencies = {};
+// let frequencies = {};
 
-for (let i = 0; i < numbers.length; i++) {
-    frequencies[numbers[i]] = 0;
-}
+// for (let i = 0; i < numbers.length; i++) {
+//     frequencies[numbers[i]] = 0;
+// }
 
-for (let i = 0; i < numbers.length; i++) {
-    frequencies[numbers[i]]++;
-}
+// for (let i = 0; i < numbers.length; i++) {
+//     frequencies[numbers[i]]++;
+// }
 
-// console.log(frequencies);
-// for (let key in frequencies) {
-//     if (frequencies[key] === 1) {
-//         console.log(key);
+// // console.log(frequencies);
+// // for (let key in frequencies) {
+// //     if (frequencies[key] === 1) {
+// //         console.log(key);
+// //         break;
+// //     }
+// // }
+
+// for (let i = 0; i < numbers.length; i++) {
+//     if (frequencies[numbers[i]] === 1) {
+//         console.log(numbers[i]);
 //         break;
 //     }
 // }
 
-for (let i = 0; i < numbers.length; i++) {
-    if (frequencies[numbers[i]] === 1) {
-        console.log(numbers[i]);
-        break;
-    }
-}
+/*
+Problem: Given an array of integers, return the indices of the two numbers such that they add up to a specific target. You may assume that each input would have exactly one solution, and you may not use the same element twice. You can return the answer in any order.
+
+input: [2, 7, 11, 15], target = 9
+
+output: [0, 1]
+
+input: [3, 2, 4], target = 6
+
+output: [1, 2]
+
+input: [3, 3], target = 6
+
+output: [0, 1]
+*/
+
+// sliding window technique
+
+

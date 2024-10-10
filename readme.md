@@ -100,3 +100,41 @@ Homeworks:
 - Given two arrays, find the common elements between the arrays.
 
 Technique: Hashing
+
+Technique: Two Pointer Technique
+
+Homeworks:
+
+1. Given an array of integers, find the maximum sum of subarray.
+
+Input: [1, 2, 3, -2, 5]
+Output: 9
+
+Input: [-2, -3, 4, -1, -2, 1, 5, -3]
+Output: 7
+
+2. Given an array of integers, find the maximum product of subarray.
+
+Input: [2, 3, -2, 4]
+Output: 6
+
+Input: [-2, 0, -1]
+Output: 0
+
+3. Given a sorted array, remove the duplicates from the array.
+
+Input: [1, 1, 2]
+Output: [1, 2]
+
+Input: [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
+Output: [0, 1, 2, 3, 4]
+
+4. Given an array with 0's and non-zero integers, move all 0's to the end of the array while maintaining the relative order of the non-zero integers.
+
+Input: [0, 1, 0, 3, 12]
+Output: [1, 3, 12, 0, 0]
+
+Input: [0, 0, 0, 1, 2, 3]
+Output: [1, 2, 3, 0, 0, 0]
+
+Technique: Sliding Window Technique
