@@ -138,3 +138,287 @@ Input: [0, 0, 0, 1, 2, 3]
 Output: [1, 2, 3, 0, 0, 0]
 
 Technique: Sliding Window Technique
+
+## Time Complexities
+
+In a situation where we have to compare two algorithms and say which one is better, we use the performance factors.
+
+the performance factors are:
+
+1. Time Complexity: The amount of time taken by an algorithm to run as a function of the length of the input.
+
+2. Space Complexity: The amount of memory taken by an algorithm to run as a function of the length of the input.
+
+In order to denote mathematically the time complexity or space complexity of an algorithm, we use Asymptotic Notation.
+
+Asymptotic Notation is a mathematical notation that helps us to denote the time complexity or space complexity of an algorithm.
+
+The Asymptotic Notation is divided into three types:
+
+1. Big O Notation:
+
+   - upper bound
+   - worst-case
+
+2. Omega Notation:
+
+   - lower bound
+   - best-case
+
+3. Theta Notation:
+   - tight bound
+   - average-case
+
+Example to understand the different cases:
+
+Algorithm 1: Linear Search
+
+1. Get the input array and the element to be searched
+2. Traverse through the array starting from the first element
+3. For each element in the array, we compare the element with the element to be searched
+4. If the element is found, then return the index of the element
+5. After coming out of the loop, if the element is not found, then return -1
+
+Input:
+
+A = [1, 2, 3, 4, 5]
+Key = 1
+Situtation: The element we are searching is the first element in the array
+
+comparisons = 1
+Best Case: O(1)
+
+A = [1, 2, 3, 4, 5]
+Key = 3
+Situtation: The element we are searching is the middle element in the array
+
+comparisons = 3
+Average Case: O(n/2)
+
+A = [1, 2, 3, 4, 5]
+Key = 5
+Situtation: The element we are searching is the last element in the array or the element is not present in the array
+
+comparisons = 5
+Worst Case: O(n)
+
+Key Takeaway:
+
+- We consider the worst-case time complexity of an algorithm because it gives us the upper bound of the time taken by the algorithm to run.
+- We use the Big O Notation to denote the worst-case time complexity of an algorithm.
+
+Examples:
+
+```javascript
+let n, m;
+
+for (let i = 0; i < n; i++) {
+  let rNumber = Math.random();
+}
+
+for (let i = 0; i < n; i++) {
+  let rNumber = Math.random();
+}
+```
+
+What is the time complexity of the above code?
+
+options:
+
+a. O(1)
+b. O(log n)
+c. O(n)
+d. O(n^2)
+e. O(n log n)
+f. O(n^3)
+g. O(2^n)
+h. O(n!)
+
+Solution:
+
+```javascript
+let n, m;
+```
+
+Executions: 1 (declarations, assignments, initializations, decision making statement, increment)
+
+```javascript
+for (let i = 0; i < n; i++) {
+  let rNumber = Math.random();
+}
+```
+
+Executions: n
+
+```javascript
+for (let i = 0; i < m; i++) {
+  let rNumber = Math.random();
+}
+```
+
+Executions: m
+
+Total Time Complexity = 1 + n + m
+= n + m [Ignoring the constant term]
+= O(n + m)
+
+Therefore, the time complexity of the above code is O(n + m).
+
+```javascript
+let n, m;
+
+for (let i = 0; i < n; i++) {
+  let rNumber = Math.random();
+  for (let j = 0; j < n; j++) {
+    let rNumber = Math.random();
+  }
+}
+```
+
+Solution:
+
+1. Assume some random values for n
+
+n = 4
+n = 5
+n = 6
+
+2. Find the number of executions for the assumptions
+
+n = 4,
+
+    i = 0; j = 0, 1, 2, 3; executions = 4
+    i = 1; j = 0, 1, 2, 3; executions = 4
+    i = 2; j = 0, 1, 2, 3; executions = 4
+    i = 3; j = 0, 1, 2, 3; executions = 4
+
+    total executions = 4 + 4 + 4 + 4 = 16
+
+n = 5,
+
+        i = 0; j = 0, 1, 2, 3, 4; executions = 5
+        i = 1; j = 0, 1, 2, 3, 4; executions = 5
+        i = 2; j = 0, 1, 2, 3, 4; executions = 5
+        i = 3; j = 0, 1, 2, 3, 4; executions = 5
+        i = 4; j = 0, 1, 2, 3, 4; executions = 5
+
+        total executions = 5 + 5 + 5 + 5 + 5 = 25
+
+n = 6,
+
+            i = 0; j = 0, 1, 2, 3, 4, 5; executions = 6
+            i = 1; j = 0, 1, 2, 3, 4, 5; executions = 6
+            i = 2; j = 0, 1, 2, 3, 4, 5; executions = 6
+            i = 3; j = 0, 1, 2, 3, 4, 5; executions = 6
+            i = 4; j = 0, 1, 2, 3, 4, 5; executions = 6
+            i = 5; j = 0, 1, 2, 3, 4, 5; executions = 6
+
+            total executions = 6 + 6 + 6 + 6 + 6 + 6 = 36
+
+3. Summarize the assumed n and the number of executions and find the pattern
+
+n = 4, executions = 16
+n = 5, executions = 25
+n = 6, executions = 36
+
+executions = n^2
+
+4. Calculate the total time complexity
+
+T(n)
+= 1 + n^2
+= O(n^2)
+
+```javascript
+let n;
+
+for (let i = 0; i < n; i++) {
+  let rNumber = Math.random();
+  for (let j = 0; j < i; j++) {
+    let rNumber = Math.random();
+  }
+}
+```
+
+1. Assume some random values for n
+
+n = 4
+n = 5
+n = 6
+
+2. Find the number of executions for the assumptions
+
+n = 4,
+
+    i = 0; j = 0; executions = 1
+    i = 1; j = 0, 1; executions = 2
+    i = 2; j = 0, 1, 2; executions = 3
+    i = 3; j = 0, 1, 2, 3; executions = 4
+
+    total executions = 1 + 2 + 3 + 4 = 10
+
+n = 5,
+
+    i = 0; j = 0; executions = 1
+    i = 1; j = 0, 1; executions = 2
+    i = 2; j = 0, 1, 2; executions = 3
+    i = 3; j = 0, 1, 2, 3; executions = 4
+    i = 4; j = 0, 1, 2, 3, 4; executions = 5
+
+    total executions = 1 + 2 + 3 + 4 + 5 = 15
+
+n = 6,
+
+    i = 0; j = 0; executions = 1
+    i = 1; j = 0, 1; executions = 2
+    i = 2; j = 0, 1, 2; executions = 3
+    i = 3; j = 0, 1, 2, 3; executions = 4
+    i = 4; j = 0, 1, 2, 3, 4; executions = 5
+    i = 5; j = 0, 1, 2, 3, 4, 5; executions = 6
+
+    total executions = 1 + 2 + 3 + 4 + 5 + 6 = 21
+
+3. Summarize the assumed n and the number of executions and find the pattern
+
+n = 4, executions = 10
+n = 5, executions = 15
+n = 6, executions = 21
+
+4. Calculate the total time complexity
+
+T(n) = 1 + (n \* (n+1))/2
+
+```javascript
+let n;
+
+for (let i = 1; i <= n; i++) {
+  let rNumber = Math.random();
+  for (let j = 1; j <= n; j *= 2) {
+    let rNumber = Math.random();
+  }
+}
+```
+
+1. Assume some random values for n
+
+n = 10
+n = 20
+n = 30
+
+2. Find the number of executions for the assumptions
+
+n = 10, j = 1, 2, 4, 8; executions = 4
+n = 20, j = 1, 2, 4, 8, 16; executions = 5
+n = 30, j = 1, 2, 4, 8, 16; executions = 5
+n = 40, j = 1, 2, 4, 8, 16, 32; executions = 6
+
+Day 1: Problem Solving
+Day 2: Arrays - Basic Problems
+Day 3: Arrays - Intermediate Problems - Advanced Problems
+Day 4: Time Complexity - Asymptotic Notation
+Day 5: Patterns + Strings - Basic Problems
+Day 6: Strings - Intermediate Problems - Advanced Problems
+Day 7: Sorting Algorithms
+Day 8: Searching Algorithms
+Day 9: Linked List - Singly, Doubly, Circularly
+Day 10: Stacks and Queues
