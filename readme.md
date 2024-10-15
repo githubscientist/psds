@@ -412,13 +412,57 @@ n = 20, j = 1, 2, 4, 8, 16; executions = 5
 n = 30, j = 1, 2, 4, 8, 16; executions = 5
 n = 40, j = 1, 2, 4, 8, 16, 32; executions = 6
 
+Problem: Given an array of integers, find and print all the combinations of the elements in the array.
+
+Input: [1, 2]
+Output: [1], [2], [1, 2], []
+
+Input: [1, 2, 3]
+Output: [1], [2], [3], [1, 2], [1, 3], [2, 3], [1, 2, 3], []
+
+Input: [1, 2, 3, 4]
+Output: [1], [2], [3], [4], [1, 2], [1, 3], [1, 4], [2, 3], [2, 4], [3, 4], [1, 2, 3], [1, 2, 4], [1, 3, 4], [2, 3, 4], [1, 2, 3, 4], []
+
+Problem: Given a string, find and print all the permutations of the characters in the string.
+
+Input: "ab"
+Output: "ab", "ba"
+
+Input: "abc"
+Output: "abc", "acb", "bac", "bca", "cab", "cba"
+
+Input: "abcd"
+Output: "abcd", "abdc", "acbd", "acdb", "adbc", "adcb", "bacd", "badc", "bcad", "bcda", "bdac", "bdca", "cabd", "cadb", "cbad", "cbda", "cdab", "cdba", "dabc", "dacb", "dbac", "dbca", "dcab", "dcba"
+
 Day 1: Problem Solving
 Day 2: Arrays - Basic Problems
 Day 3: Arrays - Intermediate Problems - Advanced Problems
 Day 4: Time Complexity - Asymptotic Notation
 Day 5: Patterns + Strings - Basic Problems
-Day 6: Strings - Intermediate Problems - Advanced Problems
+Day 6: Strings - Intermediate Problems - Advanced Problems + Recursion
 Day 7: Sorting Algorithms
 Day 8: Searching Algorithms
 Day 9: Linked List - Singly, Doubly, Circularly
 Day 10: Stacks and Queues
+
+# Strings - Basic Problems (Homeworks)
+
+1. Given a string, find the length of the string.
+2. Given a string, find the number of vowels in the string.
+3. Given a string, find the number of consonants in the string.
+4. Given a string, find the number of words in the string.
+5. Given a string, check whether the string is a palindrome or not.
+6. Given two strings, check whether the strings are anagrams or not.
+7. Given a string, find the first non-repeating character in the string.
+8. Given a string, find the first repeating character in the string.
+9. Given a string, print the characters at odd positions and even positions separately.
+10. Given a string, find the maximum frequency of a character in the string.
+11. Given a string, find the minimum frequency of a character in the string.
+12. Given a string, find the frequency of each character in the string and print as like 'a2b3c4d5'.
+13. Given a string and a character, find the frequency of the character in the string.
+14. Given a string and an index, remove the character at the given index from the string.
+15. Given a string, remove the duplicates from the string.
+16. Given a string, reverse the string.
+17. Given a string, reverse the words in the string.
+18. Given a string, find the maximum length of a substring without repeating characters.
+19. Given a string, find the longest palindrome substring in the string.
