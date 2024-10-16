@@ -466,3 +466,75 @@ Day 10: Stacks and Queues
 17. Given a string, reverse the words in the string.
 18. Given a string, find the maximum length of a substring without repeating characters.
 19. Given a string, find the longest palindrome substring in the string.
+
+# Recursion Techniques
+
+Recursion is a technique in which a function calls itself to solve a problem.
+
+Given a string, find the longest palindrome substring in the string. If there are multiple palindrome substrings with the same length, then print all the palindrome substrings.
+
+Input: "babad"
+Output: "bab", "aba"
+
+Input: "cbbd"
+Output: "bb"
+
+Input: "a"
+Output: "a"
+
+Input: "ac"
+Output: "a", "c"
+
+Input: "racecar"
+Output: "racecar"
+
+Input: "abbcdedcbaabbaabaccab"
+Output: baabbaab
+
+Palindromes in the input string are:
+
+ded
+cdedc
+baabbaab
+aabbaa
+abba
+bb
+aba
+baccab
+acca
+cc
+a
+b
+c
+d
+
+substrings of racecar:
+
+r
+ra
+rac
+race
+racec
+raceca
+racecar
+a
+ac
+ace
+acec
+aceca
+acecar
+c
+ce
+cec
+ceca
+cecar
+e
+ec
+eca
+ecar
+c
+ca
+car
+a
+ar
+r
