@@ -538,3 +538,21 @@ car
 a
 ar
 r
+
+# Sorting Algorithms
+
+Sorting is the process of arranging the elements in a list in a specific order.
+
+- Bubble Sort
+- Selection Sort
+- Insertion Sort
+- Counting Sort
+
+HomeWorks:
+
+1. Modify the bubble sort algorithm to stop the sorting process if the elements are already sorted.
+2. Find the kth largest element in an array using the bubble sort algorithm.
+3. Given a nearly sorted array (each eleemnt is at most k positions away from its sorted position), sort the array using the insertion sort algorithm.
+4. Given two unsorted arrays, merge the arrays into a single array.
+5. Given two unsorted arrays, find the median of the arrays.
+6. Given an unsorted array, find the pair of elements with the minimum difference.
