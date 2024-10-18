@@ -184,4 +184,24 @@ output: [0, 1]
 
 // sliding window technique
 
+function removeAll(numbers, toRemove) {
+    // if the element exists, then index will be returned
+    // else -1 will be returned
+    let nextIndex = numbers.indexOf(toRemove);
 
+    while (nextIndex != -1) {
+        // remove that occurence    
+        numbers.splice(nextIndex, 1);
+
+        // find the next occurence
+        nextIndex = numbers.indexOf(toRemove, nextIndex + 1);
+    }
+}
+
+let numbers = [1, 2, 3, 4, 5, 1, 2, 3, 1, 2, 3, 1, 2, 3];
+let toRemove = 3;
+
+// removeAll(numbers, toRemove);
+numbers = numbers.filter(number => number !== toRemove);
+
+console.log(numbers);

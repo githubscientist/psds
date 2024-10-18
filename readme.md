@@ -556,3 +556,37 @@ HomeWorks:
 4. Given two unsorted arrays, merge the arrays into a single array.
 5. Given two unsorted arrays, find the median of the arrays.
 6. Given an unsorted array, find the pair of elements with the minimum difference.
+
+# Searching Algorithms - Homeworks
+
+1.  Problem: Count the number of 1's in a sorted binary array.
+
+    Input: [0, 0, 0, 1, 1, 1, 1]
+    Output: 4
+
+    Input: [1, 1, 1, 1, 1]
+    Output: 5
+
+    Input: [0, 0, 0, 0, 1]
+    Output: 1
+
+    Input: [0, 0, 0, 0, 0]
+    Output: 0
+
+    Note: using linear search, binary search, and ternary search, two pointer technique
+
+2.  Problem: Given a rotated sorted array, find the maximum element.
+
+    Input: [5, 6, 7, 8, 9, 10, 1, 2, 3]
+    Output: 10
+
+    Input: [3, 4, 5, 1, 2]
+    Output: 5
+
+    Input: [1, 2, 3, 4, 5]
+    Output: 5
+
+    Input: [1]
+    Output: 1
+
+    Note: using linear search, binary search, and ternary search
