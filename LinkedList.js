@@ -74,11 +74,15 @@ console.log(list.toArray());
 // console.log(node1.data, node1.next.data, node1.next.next.data);
 
 /*
-    node1 = null
-    
-    node2 = Node {
-        data: 4,
-        next: null
+    list.head = Node {
+        data: 3,
+        next: Node {
+            data: 4,
+            next: Node {
+                data: 6,
+                next: null
+            }
+        }
     }
 */
 
