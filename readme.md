@@ -590,3 +590,29 @@ HomeWorks:
     Output: 1
 
     Note: using linear search, binary search, and ternary search
+
+## Linked List - Singly
+
+## Practice Problems
+
+1. Given a linked list, find the length of the linked list.
+2. Given a linked list, find the middle element of the linked list.
+3. Given a linked list, find the nth element from the end of the linked list. You should iterate the linked list only once.
+4. Given a linked list, reverse the linked list.
+5. Given two linked lists, merge the linked lists into a single linked list.
+6. Given a linked list, check whether the linked list is a palindrome or not.
+7. Given a linked list, remove the duplicates from the linked list.
+
+## Stacks and Queues
+
+Stacks:
+
+- Stacks are also used to store multiple elements.
+- The elements are stored in a Last In First Out (LIFO) order.
+- Which means, the Last element inserted into the stack is the First element to be removed from the stack.
+- The operations that can be performed on a stack are:
+  - Push: To insert an element into the stack.
+  - Pop: To remove an element from the stack.
+  - Peek: To get the top element of the stack without removing it.
+  - isEmpty: To check whether the stack is empty or not.
+- The stack can be implemented using an array or a linked list.
